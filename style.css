@@ -8,3 +8,22 @@ li:nth-child(2n+1){
     font-weight: 700;
     background-color: red;
 }
+h1::before{
+        content: "HELLO";
+        color: aqua;
+        font-size: 22px;
+        background-color: blue;
+}
+h1::after{
+    content: "HELLO";
+    color: aqua;
+    font-size: 22px;
+    background-color: blue;
+}
+body{
+    counter-reset: section;
+}
+p::before{
+    counter-increment: section;
+    content: "" counter(section)" ";
+}
