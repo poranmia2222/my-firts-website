@@ -27,3 +27,15 @@ p::before{
     counter-increment: section;
     content: "" counter(section)" ";
 }
+div{
+    background-color: red;
+    margin: 20px;
+    padding: 30px;
+    height: 100px;
+    width: 100px;
+}
+.position{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
